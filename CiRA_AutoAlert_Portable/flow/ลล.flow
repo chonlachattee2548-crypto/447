@@ -1,0 +1,212 @@
+{
+    "connections": [
+        {
+            "in_id": "{a1206947-001d-4aad-8cdf-0c8eaf2e1b0a}",
+            "in_index": 0,
+            "out_id": "{b5ca2a07-7ef3-4a83-b956-e4dccc53aa68}",
+            "out_index": 0
+        },
+        {
+            "converter": {
+                "in": {
+                    "id": "flow_data",
+                    "name": "FlowData"
+                },
+                "out": {
+                    "id": "flow1_data",
+                    "name": "Flow1Data"
+                }
+            },
+            "in_id": "{9945d36e-50c4-4fe1-9292-7dae84fead45}",
+            "in_index": 0,
+            "out_id": "{a1206947-001d-4aad-8cdf-0c8eaf2e1b0a}",
+            "out_index": 1
+        },
+        {
+            "in_id": "{10ea3476-f621-4b99-9f1b-b5eefda6a0bd}",
+            "in_index": 0,
+            "out_id": "{b5ca2a07-7ef3-4a83-b956-e4dccc53aa68}",
+            "out_index": 0
+        },
+        {
+            "in_id": "{71c77de9-87be-4131-a055-69955616a4d1}",
+            "in_index": 0,
+            "out_id": "{a1206947-001d-4aad-8cdf-0c8eaf2e1b0a}",
+            "out_index": 0
+        },
+        {
+            "in_id": "{b5ca2a07-7ef3-4a83-b956-e4dccc53aa68}",
+            "in_index": 0,
+            "out_id": "{10ea3476-f621-4b99-9f1b-b5eefda6a0bd}",
+            "out_index": 0
+        }
+    ],
+    "nodes": [
+        {
+            "id": "{a1206947-001d-4aad-8cdf-0c8eaf2e1b0a}",
+            "model": {
+                "data": {
+                    "curr_tap": 0,
+                    "draw_roi": true,
+                    "enable_tracking": false,
+                    "font_scale": 1.2,
+                    "font_thickness": 2,
+                    "frame_buffer": 5,
+                    "is_roi_polygon": false,
+                    "map_det_cfgs": [
+                        {
+                            "backend_name": "CUDA",
+                            "config_name": "v4",
+                            "config_path": "C:/Users/Chonlachat2005/Desktop/เรียน/66049441 CPE447/CiRACORE_Training_SPU L2 441/CiRACORE_Training_SPU/0x03 DeepDetect/weights/v4"
+                        }
+                    ],
+                    "max_dist": 150,
+                    "nms": 0.4,
+                    "rect_thickness": 2,
+                    "result_drawing": true,
+                    "roi_h": 50000,
+                    "roi_polygon": {
+                    },
+                    "roi_w": 50000,
+                    "roi_x": 0,
+                    "roi_y": 0,
+                    "show_confidence": true,
+                    "text_drawing": true,
+                    "this_config_name": "v4",
+                    "thresh": 30,
+                    "txt_offset": 5
+                },
+                "name": "DeepDetect ",
+                "node_enable": true,
+                "obj_colors": {
+                    "array": [
+                    ]
+                }
+            },
+            "ngo": {
+                "comment": {
+                    "data": "",
+                    "show": false
+                }
+            },
+            "position": {
+                "fix": false,
+                "x": 722,
+                "y": 247
+            }
+        },
+        {
+            "id": "{10ea3476-f621-4b99-9f1b-b5eefda6a0bd}",
+            "model": {
+                "name": "ButtonRun"
+            },
+            "ngo": {
+                "comment": {
+                    "data": "",
+                    "show": false
+                }
+            },
+            "position": {
+                "fix": false,
+                "x": 399,
+                "y": 285
+            }
+        },
+        {
+            "id": "{71c77de9-87be-4131-a055-69955616a4d1}",
+            "model": {
+                "height": 560,
+                "name": "Debug",
+                "output_h": 0,
+                "output_v": 0,
+                "page_index": 2,
+                "payload_h": 0,
+                "payload_v": 0,
+                "width": 583
+            },
+            "ngo": {
+                "comment": {
+                    "data": "",
+                    "show": false
+                }
+            },
+            "position": {
+                "fix": false,
+                "x": 1178,
+                "y": -247
+            }
+        },
+        {
+            "id": "{9945d36e-50c4-4fe1-9292-7dae84fead45}",
+            "model": {
+                "data": {
+                    "timeout": 3000,
+                    "url": "url = \"http://127.0.0.1:8765/\";",
+                    "widget_state": {
+                        "editor_setting": {
+                            "autoComplete": {
+                                "caseSensitivity": true,
+                                "enable": true,
+                                "threshold": 3
+                            },
+                            "indent": {
+                                "enable": true
+                            },
+                            "theme": "Material Dark",
+                            "whitespace": {
+                                "enable": false,
+                                "size": 2
+                            }
+                        },
+                        "splt0": 220,
+                        "splt1": 138
+                    }
+                },
+                "name": "RestPutJson",
+                "node_enable": true
+            },
+            "ngo": {
+                "comment": {
+                    "data": "",
+                    "show": false
+                }
+            },
+            "position": {
+                "fix": false,
+                "x": 988,
+                "y": 247
+            }
+        },
+        {
+            "id": "{b5ca2a07-7ef3-4a83-b956-e4dccc53aa68}",
+            "model": {
+                "data": {
+                    "filename": "C:/Users/Chonlachat2005/Downloads/Project 447/CiRA_AutoAlert_Portable/videos/คลิปทดสอบ.mp4",
+                    "height": 275,
+                    "loop": true,
+                    "width": 284
+                },
+                "name": "VideoFile",
+                "node_enable": true
+            },
+            "ngo": {
+                "comment": {
+                    "data": "",
+                    "show": false
+                }
+            },
+            "position": {
+                "fix": false,
+                "x": 570,
+                "y": 266
+            }
+        }
+    ],
+    "scene_data": {
+        "flow_view_fix": false,
+        "flow_view_pos_x": -303.58554223047565,
+        "flow_view_pos_y": -713.6060772878793,
+        "flow_view_zoom_factor": 0.620921323059155,
+        "scene_version": 1
+    }
+}
